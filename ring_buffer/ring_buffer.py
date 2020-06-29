@@ -34,7 +34,7 @@ class RingBuffer:
     def __init__(self, capacity):
         self.capacity = capacity
         self.cur = None
-        self.storage = DoublyLinkedList()
+        self.storage = DoublyLinkedList()  # not using list per read-me instructions
 
     def append(self, item):
         if self.storage.length < self.capacity:
