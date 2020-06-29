@@ -30,6 +30,7 @@ class DoublyLinkedList:
             self.tail = new_node
 
 
+# Stretch Goal # 
 class RingBuffer:
     def __init__(self, capacity):
         self.capacity = capacity
@@ -47,8 +48,6 @@ class RingBuffer:
             else:
                 self.cur = self.cur.next
             self.cur.value = item
-
-
 
     def get(self):
         buffer_container = []
